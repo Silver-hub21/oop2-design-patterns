@@ -1,8 +1,9 @@
+package composite;
+
 import composite.ejercicio1.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -26,7 +27,7 @@ public class EmpleadoTest {
 
     @Test
     public void testEmpleadoSinSubordinados() {
-        var empleado = new EmpleadoRegular("Maria", "Suarez", 1500);
+        var empleado = new EmpleadoRegular("Martin", "Suarez", 1500);
         assertEquals(1500, empleado.calcularSalarioTotal());
     }
 
